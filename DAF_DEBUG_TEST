@@ -1,1 +1,7 @@
-print("Testing.")
+local DEBUGID = 12410923420
+
+local Debugger = require(DEBUGID)
+
+for i,v in pairs(game.Player:GetPlayers())
+    Debugger.DEBUG(v)
+end
